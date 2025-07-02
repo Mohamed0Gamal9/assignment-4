@@ -279,31 +279,60 @@ namespace assignment_3
             //} 
             #endregion
 
-            int start, end;
+            #region Q15
+            //int start, end;
 
-            Console.Write("enter the start number: ");
-            start = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("enter the start number: ");
+            //start = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("enter the end number: ");
-            end = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("enter the end number: ");
+            //end = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Clear();
+            //Console.WriteLine($"prime numbers between {start} and {end}:");
+
+            //for (int num = start; num <= end; num++)
+            //{
+            //    int count = 0;
+
+            //    for (int i = 1; i <= num; i++)
+            //    {
+            //        if (num % i == 0)
+            //            count++;
+            //    }
+
+            //    if (count == 2)
+            //        Console.Write($"{num} ");
+            //} 
+            #endregion
+
+            Console.Write("Enter a decimal number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear();
-            Console.WriteLine($"prime numbers between {start} and {end}:");
+            Console.Write($"Binary of {number} is: ");
 
-            for (int num = start; num <= end; num++)
+            if (number == 0)
             {
-                int count = 0;
-
-                for (int i = 1; i <= num; i++)
-                {
-                    if (num % i == 0)
-                        count++;
-                }
-
-                if (count == 2)
-                    Console.Write($"{num} ");
+                Console.WriteLine(0);
+            }
+            else
+            {
+                Binary(number);
+                Console.WriteLine();
             }
         }
 
+        static void Binary(int n)
+        {
+            if (n == 0)
+                return;
+
+            Binary(n / 2);
+
+            Console.Write(n % 2);
+        }
     }
-    }
+}
+
+   

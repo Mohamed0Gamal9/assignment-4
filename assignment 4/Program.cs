@@ -136,18 +136,35 @@ namespace assignment_3
             //} 
             #endregion
 
-            int x;
-            Console.WriteLine("enter your number");
-            x= Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
-            for (int i = 1; i <= x; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine($"{i} ,");
-                }
+            #region Q8
+            //int x;
+            //Console.WriteLine("enter your number");
+            //x= Convert.ToInt32(Console.ReadLine());
+            //Console.Clear();
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine($"{i} ,");
+            //    }
 
+            //} 
+            #endregion
+
+            int x,y;
+            Console.WriteLine("enter your first number: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your second number: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+                int result=1;
+            for (int i = 1; i <= y; i++)
+            {
+                result*=x;
             }
+            Console.WriteLine($"{result}");
+
+
         }
     }
 }

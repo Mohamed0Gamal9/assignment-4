@@ -80,15 +80,39 @@ namespace assignment_3
             //} 
             #endregion
 
-            int x;
-            Console.WriteLine("enter your number: ");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
-            if (x % 2 == 0)
-            { Console.WriteLine("x is even"); }
-            else
-            { Console.WriteLine("x is odd");
+            #region Q4
+            //int x;
+            //Console.WriteLine("enter your number: ");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.Clear();
+            //if (x % 2 == 0)
+            //{ Console.WriteLine("x is even"); }
+            //else
+            //{ Console.WriteLine("x is odd");
 
+            //} 
+            #endregion
+
+            char x;
+            Console.WriteLine("enter your character: ");
+            x = Convert.ToChar(Console.ReadLine().ToLower());
+            Console.Clear();
+            switch (x)
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine("vowel");
+                    break;
+                default:
+                    Console.WriteLine("consonant");
+                    break;
             }
+
+
+
+        }
     }
 }

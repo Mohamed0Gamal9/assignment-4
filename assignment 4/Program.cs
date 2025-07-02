@@ -336,32 +336,62 @@ namespace assignment_3
             //} 
             #endregion
 
-            int x1, y1, x2, y2, x3, y3;
+            #region Q17
+            //int x1, y1, x2, y2, x3, y3;
 
-            Console.WriteLine("enter coordinates of the first point (x1 y1):");
-            x1 = Convert.ToInt32(Console.ReadLine());
-            y1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter coordinates of the first point (x1 y1):");
+            //x1 = Convert.ToInt32(Console.ReadLine());
+            //y1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("enter coordinates of the second point (x2 y2):");
-            x2 = Convert.ToInt32(Console.ReadLine());
-            y2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter coordinates of the second point (x2 y2):");
+            //x2 = Convert.ToInt32(Console.ReadLine());
+            //y2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("enter coordinates of the third point (x3 y3):");
-            x3 = Convert.ToInt32(Console.ReadLine());
-            y3 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter coordinates of the third point (x3 y3):");
+            //x3 = Convert.ToInt32(Console.ReadLine());
+            //y3 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Clear();
+
+            //double area = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
+
+
+            //if (area == 0)
+            //{
+            //    Console.WriteLine("The points are colinear (on the same straight line).");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The points are NOT colinear.");
+            //} 
+            #endregion
+
+            int time;
+
+            Console.Write("Enter the time taken: ");
+            time = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear();
 
-            double area = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
-
-
-            if (area == 0)
+            if (time >= 2 && time < 3)
             {
-                Console.WriteLine("The points are colinear (on the same straight line).");
+                Console.WriteLine("highly efficient.");
+            }
+            else if (time >= 3 && time < 4)
+            {
+                Console.WriteLine("you need to improve your speed.");
+            }
+            else if (time >= 4 && time <= 5)
+            {
+                Console.WriteLine("you need training to improve your speed.");
+            }
+            else if (time > 5)
+            {
+                Console.WriteLine("you are to leave the company.");
             }
             else
             {
-                Console.WriteLine("The points are NOT colinear.");
+                Console.WriteLine("invalid input or time less than 2 hours.");
             }
         }
     }

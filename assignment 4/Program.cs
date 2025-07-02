@@ -251,14 +251,32 @@ namespace assignment_3
             //} 
             #endregion
 
-            string x;
-            Console.WriteLine("enter your word: ");
-            x = Console.ReadLine();
-            Console.Clear();
-            for (int i = x.Length-1; i >= 0; i--)
+            #region Q13
+            //string x;
+            //Console.WriteLine("enter your word: ");
+            //x = Console.ReadLine();
+            //Console.Clear();
+            //for (int i = x.Length-1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(x[i]);
+            //} 
+            #endregion
+
+            int[] x;
+            Console.WriteLine("enter your array size: ");
+            int size = Convert.ToInt32(Console.ReadLine());
+            x =new int[size];
+            Console.WriteLine("enter your array elements: ");
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(x[i]);
+                x[i] = Convert.ToInt32(Console.ReadLine());
             }
+            Console.Clear();
+            for(int j=x.Length-1; j >= 0; j--)
+            {
+                Console.WriteLine(x[j]);
+            }
+
 
 
         }

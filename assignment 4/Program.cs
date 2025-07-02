@@ -19,22 +19,63 @@ namespace assignment_3
             //else { Console.WriteLine("no"); } 
             #endregion
 
-            int x;
-            Console.WriteLine("enter your number: ");
+            #region Q2
+            //int x;
+            //Console.WriteLine("enter your number: ");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.Clear();
+            //if(x==0)
+            //{
+            //    Console.WriteLine("zero");
+            //}
+            //else if(x>0)
+            //{
+            //    Console.WriteLine("positive");
+            //}
+            //else
+
+            //{
+            //     Console.WriteLine("negative");
+            //} 
+            #endregion
+
+            int x,y, z;
+            Console.WriteLine("enter your first number: ");
             x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your second number: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your third number: ");
+            z = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
-            if(x==0)
+            int max = x;
+            int min = y;
+            if(y>max)
             {
-                Console.WriteLine("zero");
+                max = y;
+                Console.WriteLine($"max is {max}");
             }
-            else if(x>0)
+            else if (z> max)
             {
-                Console.WriteLine("positive");
+                max = z;
+                Console.WriteLine($"max is {max}");
             }
             else
-
             {
-                 Console.WriteLine("negative");
+                Console.WriteLine($"max is {max}");
+            }
+            if (x < min)
+            {
+                min = x;
+                Console.WriteLine($"min is {min}");
+            }
+            else if (z < min)
+            {
+                min = z;
+                Console.WriteLine($"min is {min}");
+            }
+            else
+            {
+                Console.WriteLine($"min is {min}");
             }
         }
     }

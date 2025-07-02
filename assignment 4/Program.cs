@@ -306,31 +306,63 @@ namespace assignment_3
             //} 
             #endregion
 
-            Console.Write("Enter a decimal number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
+            #region Q16
+
+            //    Console.Write("Enter a decimal number: ");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+
+            //    Console.Clear();
+            //    Console.Write($"Binary of {number} is: ");
+
+            //    if (number == 0)
+            //    {
+            //        Console.WriteLine(0);
+            //    }
+            //    else
+            //    {
+            //        Binary(number);
+            //        Console.WriteLine();
+            //    }
+            //}
+
+            //static void Binary(int n)
+            //{
+            //    if (n == 0)
+            //        return;
+
+            //    Binary(n / 2);
+
+            //    Console.Write(n % 2);
+            //} 
+            #endregion
+
+            int x1, y1, x2, y2, x3, y3;
+
+            Console.WriteLine("enter coordinates of the first point (x1 y1):");
+            x1 = Convert.ToInt32(Console.ReadLine());
+            y1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter coordinates of the second point (x2 y2):");
+            x2 = Convert.ToInt32(Console.ReadLine());
+            y2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter coordinates of the third point (x3 y3):");
+            x3 = Convert.ToInt32(Console.ReadLine());
+            y3 = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear();
-            Console.Write($"Binary of {number} is: ");
 
-            if (number == 0)
+            double area = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
+
+
+            if (area == 0)
             {
-                Console.WriteLine(0);
+                Console.WriteLine("The points are colinear (on the same straight line).");
             }
             else
             {
-                Binary(number);
-                Console.WriteLine();
+                Console.WriteLine("The points are NOT colinear.");
             }
-        }
-
-        static void Binary(int n)
-        {
-            if (n == 0)
-                return;
-
-            Binary(n / 2);
-
-            Console.Write(n % 2);
         }
     }
 }

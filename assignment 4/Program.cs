@@ -7,15 +7,35 @@ namespace assignment_3
         static void Main(string[] args)
         {
 
+            #region Q1
+            //int x;
+            //Console.WriteLine("enter your number: ");
+            //x= Convert.ToInt32(Console.ReadLine());
+            //Console.Clear();
+            //if (x%3==0 && x%4==0)
+            //{
+            //    Console.WriteLine("yes");
+            //}
+            //else { Console.WriteLine("no"); } 
+            #endregion
+
             int x;
             Console.WriteLine("enter your number: ");
-            x= Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
-            if (x%3==0 && x%4==0)
+            if(x==0)
             {
-                Console.WriteLine("yes");
+                Console.WriteLine("zero");
             }
-            else { Console.WriteLine("no"); }
+            else if(x>0)
+            {
+                Console.WriteLine("positive");
+            }
+            else
+
+            {
+                 Console.WriteLine("negative");
+            }
         }
     }
 }

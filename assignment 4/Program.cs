@@ -113,13 +113,25 @@ namespace assignment_3
             //} 
             #endregion
 
+            #region Q6
+            //int x;
+            //Console.WriteLine("enter your number");
+            //x= Convert.ToInt32(Console.ReadLine());
+            //Console.Clear();
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    Console.Write($"{i}, ");
+            //} 
+            #endregion
+
             int x;
             Console.WriteLine("enter your number");
-            x= Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
-            for (int i = 1; i <= x; i++)
+            for(int i=1;i<=12;i++)
             {
-                Console.Write($"{i}, ");
+                int result = x * i;
+                Console.Write($"{result},");
             }
 
 

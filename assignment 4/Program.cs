@@ -220,33 +220,44 @@ namespace assignment_3
             //} 
             #endregion
 
-            int x, y;
-            Console.WriteLine("Enter your first number: ");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter your second number: ");
-            y = Convert.ToInt32(Console.ReadLine());
-            char b;
-            Console.WriteLine("Enter your operator (+, -, *, /): ");
-            b = Convert.ToChar(Console.ReadLine());
-            Console.Clear();
-            switch(char.ToLower(b))
-            {
-                case '+':
-                    Console.WriteLine($"The result of {x} + {y} is: {x + y}");
-                    break;
-                    case '-':
-                    Console.WriteLine($"The result of {x} - {y} is: {x - y}");
-                    break;
-                    case '*':
-                    Console.WriteLine($"The result of {x} * {y} is: {x * y}");
-                    break;
-                    case '/':
-                    Console.WriteLine($"The result of {x} / {y} is: {x / y}");
-                    break;
-                    default:
-                    Console.WriteLine("Invalid operator. Please enter one of the following: +, -, *, /");
-                    break;
+            #region Q12
+            //int x, y;
+            //Console.WriteLine("Enter your first number: ");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter your second number: ");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //char b;
+            //Console.WriteLine("Enter your operator (+, -, *, /): ");
+            //b = Convert.ToChar(Console.ReadLine());
+            //Console.Clear();
+            //switch(char.ToLower(b))
+            //{
+            //    case '+':
+            //        Console.WriteLine($"The result of {x} + {y} is: {x + y}");
+            //        break;
+            //        case '-':
+            //        Console.WriteLine($"The result of {x} - {y} is: {x - y}");
+            //        break;
+            //        case '*':
+            //        Console.WriteLine($"The result of {x} * {y} is: {x * y}");
+            //        break;
+            //        case '/':
+            //        Console.WriteLine($"The result of {x} / {y} is: {x / y}");
+            //        break;
+            //        default:
+            //        Console.WriteLine("Invalid operator. Please enter one of the following: +, -, *, /");
+            //        break;
 
+            //} 
+            #endregion
+
+            string x;
+            Console.WriteLine("enter your word: ");
+            x = Console.ReadLine();
+            Console.Clear();
+            for (int i = x.Length-1; i >= 0; i--)
+            {
+                Console.WriteLine(x[i]);
             }
 
 

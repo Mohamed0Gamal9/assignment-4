@@ -151,18 +151,39 @@ namespace assignment_3
             //} 
             #endregion
 
-            int x,y;
-            Console.WriteLine("enter your first number: ");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter your second number: ");
-            y = Convert.ToInt32(Console.ReadLine());
+            #region Q9
+            //int x,y;
+            //Console.WriteLine("enter your first number: ");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter your second number: ");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //Console.Clear();
+            //    int result=1;
+            //for (int i = 1; i <= y; i++)
+            //{
+            //    result*=x;
+            //}
+            //Console.WriteLine($"{result}"); 
+            #endregion
+
+            int a, b, c, d, e;
+            Console.WriteLine("enter your first subject mark:  ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your second subject mark:  ");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your third subject mark:  ");
+            c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your fourth subject mark:  ");
+            d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter your fifth subject mark:  ");
+            e = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
-                int result=1;
-            for (int i = 1; i <= y; i++)
-            {
-                result*=x;
-            }
-            Console.WriteLine($"{result}");
+            int total = a + b + c + d + e;
+            Console.WriteLine(total);
+            int average = total / 5;
+            Console.WriteLine(average);
+            float precentage=((float)total/500) * 100;
+            Console.WriteLine(precentage);
 
 
         }

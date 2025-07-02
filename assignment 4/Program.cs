@@ -93,24 +93,34 @@ namespace assignment_3
             //} 
             #endregion
 
-            char x;
-            Console.WriteLine("enter your character: ");
-            x = Convert.ToChar(Console.ReadLine().ToLower());
-            Console.Clear();
-            switch (x)
-            {
-                case 'a':
-                case 'e':
-                case 'i':
-                case 'o':
-                case 'u':
-                    Console.WriteLine("vowel");
-                    break;
-                default:
-                    Console.WriteLine("consonant");
-                    break;
-            }
+            #region Q5
+            //char x;
+            //Console.WriteLine("enter your character: ");
+            //x = Convert.ToChar(Console.ReadLine().ToLower());
+            //Console.Clear();
+            //switch (x)
+            //{
+            //    case 'a':
+            //    case 'e':
+            //    case 'i':
+            //    case 'o':
+            //    case 'u':
+            //        Console.WriteLine("vowel");
+            //        break;
+            //    default:
+            //        Console.WriteLine("consonant");
+            //        break;
+            //} 
+            #endregion
 
+            int x;
+            Console.WriteLine("enter your number");
+            x= Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            for (int i = 1; i <= x; i++)
+            {
+                Console.Write($"{i}, ");
+            }
 
 
         }
